@@ -3,39 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>fleur's weather app</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <h1>London</h1>
-      <div>
-        <p>
-          Sunday, 09:42, partially cloudy <br />
-          Humidity: 66%, Wind: 8mph
-        </p>
-      </div>
-      <div>🌤️ 5°C</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/fleurdevanney" target="_blank"
-        >Fleur Devanney</a
-      >, open-sourced on
-      <a
-        href="https://github.com/fleurdevanney/fleurs-weather-app"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://fleurs-weather-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city.." required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <h1>London</h1>
+        <div>
+          <p>
+            Sunday, 09:42, partially cloudy <br />
+            Humidity: 66%, Wind: 8mph
+          </p>
+        </div>
+        <div>🌤️ 5°C</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/fleurdevanney" target="_blank"
+          >Fleur Devanney</a
+        >, open-sourced on
+        <a
+          href="https://github.com/fleurdevanney/fleurs-weather-app"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://fleurs-weather-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
