@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">London</h1>
+            <h1 class="weather-app-city" id="city">London</h1>
             <p class="weather-app-details">
               Sunday, 09:42, partially cloudy <br />
               Humidity: <strong>66%</strong>, Wind: <strong>8mph</strong>
@@ -56,6 +57,7 @@
           >Netlify</a
         >
       </footer>
+      <script src="src/index.js"></script>
     </div>
   </body>
 </html>
