@@ -9,6 +9,7 @@ a {
   background-color: white;
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 40px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 20px;
   padding: 40px;
@@ -46,6 +47,7 @@ header {
 .weather-app-icon {
   margin-top: 47px;
   font-size: 35px;
+  margin-right: 5px;
 }
 .weather-app-temperature {
   margin-top: 35px;
