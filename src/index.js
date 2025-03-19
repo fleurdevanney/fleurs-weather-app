@@ -9,14 +9,18 @@ function updateWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
+  let feelsElement = document.querySelector("#feels");
+  let feels = response.data.temperature.feels_like;
 
-  cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   temperatureElement.innerHTML = Math.round(temperature);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   speedElement.innerHTML = `${Math.round(speed)}mph`;
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class=weather-app-icon /img>`;
+  feelsElement.innerHTML = `${Math.round(feels)}%`;
+
+  console.log(response.data);
 }
 
 function formatDate(date) {
