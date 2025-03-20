@@ -12,6 +12,7 @@ function updateWeather(response) {
   let feelsElement = document.querySelector("#feels");
   let feels = response.data.temperature.feels_like;
 
+  cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   temperatureElement.innerHTML = Math.round(temperature);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
@@ -19,8 +20,6 @@ function updateWeather(response) {
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class=weather-app-icon /img>`;
   feelsElement.innerHTML = `${Math.round(feels)}%`;
-
-  console.log(response.data);
 }
 
 function formatDate(date) {
