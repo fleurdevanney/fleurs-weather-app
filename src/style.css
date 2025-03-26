@@ -60,6 +60,28 @@ header {
   margin-top: 47px;
   font-size: 20px;
 }
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  padding: 5px;
+}
+.weather-forecast-icon {
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: pink;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temperature {
+  padding: 5px;
+}
 footer {
   border-top: 1px solid #f4f1fe;
   padding-top: 40px;
