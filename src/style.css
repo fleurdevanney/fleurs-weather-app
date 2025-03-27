@@ -70,7 +70,8 @@ header {
   padding: 5px;
 }
 .weather-forecast-icon {
-  text-align: center;
+  width: 75px;
+  margin-left: 5px;
 }
 .weather-forecast-temperatures {
   text-align: center;
