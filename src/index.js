@@ -19,7 +19,7 @@ function updateWeather(response) {
   speedElement.innerHTML = `${Math.round(speed)}mph`;
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class=weather-app-icon /img>`;
-  feelsElement.innerHTML = `${Math.round(feels)}%`;
+  feelsElement.innerHTML = `${Math.round(feels)}°C`;
 
   getForecast(response.data.city);
 }
